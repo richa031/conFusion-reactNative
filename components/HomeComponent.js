@@ -43,7 +43,7 @@ class Home extends Component {
         title: 'Home'
     }
     render(){
-        return(
+        return(//for getting a scrollbar we use scrollview
             <ScrollView>
                 <RenderItem
                     item={this.state.dishes.filter((dish) => dish.featured)[0]}

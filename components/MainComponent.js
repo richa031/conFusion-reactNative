@@ -8,8 +8,9 @@ import { View, Platform } from 'react-native';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
+//creating stack navigators and using in drawer navigators
 const MenuNavigator = createStackNavigator({
-    Menu: { screen: Menu },
+    Menu: { screen: Menu },    //Menu is the req component we are using
     DishDetail: { screen: DishDetail }
 }, {
     initialRouteName: 'Menu',
